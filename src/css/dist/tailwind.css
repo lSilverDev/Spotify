@@ -556,6 +556,10 @@ video {
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -572,12 +576,20 @@ video {
   width: 5rem;
 }
 
-.w-125px {
-  width: 125px;
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-end {
@@ -592,6 +604,14 @@ video {
   justify-content: flex-end;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-r {
   border-right-width: 1px;
 }
@@ -601,14 +621,31 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-purple-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 70 185 / var(--tw-bg-opacity));
+}
+
+.bg-green-main {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 215 96 / var(--tw-bg-opacity));
+}
+
+.bg-spotify-theme-mobile {
+  background-image: url('../../img/bursts-mobile.svg');
+}
+
+.bg-195\% {
+  background-size: 195%;
+}
+
+.bg-banner-mobile {
+  background-position: top 25% center;
 }
 
 .px-3 {
@@ -626,9 +663,23 @@ video {
   padding-right: 1rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.py-40 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
@@ -641,8 +692,25 @@ video {
   line-height: 1.25rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-white {
@@ -650,11 +718,39 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
+.text-green-main {
+  --tw-text-opacity: 1;
+  color: rgb(30 215 96 / var(--tw-text-opacity));
+}
 
+.text-purple-main {
+  --tw-text-opacity: 1;
+  color: rgb(45 70 185 / var(--tw-text-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:text-hoverspt:hover {
+  --tw-text-opacity: 1;
+  color: rgb(24 215 96 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
   .md\:flex {
     display: flex;
   }
@@ -667,8 +763,29 @@ video {
     width: 125px;
   }
 
+  .md\:bg-spotify-theme {
+    background-image: url('../../img/bursts.svg');
+  }
+
+  .md\:bg-175\% {
+    background-size: 175%;
+  }
+
+  .md\:bg-banner {
+    background-position: 46% 4%;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:text-9xl {
+    font-size: 9rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
